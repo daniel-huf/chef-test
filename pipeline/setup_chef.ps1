@@ -1,4 +1,5 @@
 C:\opscode\chef-workstation\bin\chef generate repo chef-repo
+Write-Host "Azure Env Variable test: ${env:TEST_VARIABLE}"
 New-Item -Path $env:AGENT_HOMEDIRECTORY\.chef -ItemType directory
 Set-Location $env:AGENT_HOMEDIRECTORY\.chef
 New-Item -Path $env:AGENT_HOMEDIRECTORY\.chef\credentials
