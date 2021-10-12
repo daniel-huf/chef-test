@@ -12,8 +12,6 @@ stages:
 
       variables: 
         - group: Credentials
-        - name: cred
-
       
       steps:
       - task: PowerShell@2
