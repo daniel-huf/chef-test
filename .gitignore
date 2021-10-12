@@ -22,5 +22,5 @@ Berksfile.lock
 Policyfile.lock.json
 
 .idea/
-vscode/
+.vscode/
 Export/
