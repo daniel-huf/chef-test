@@ -21,6 +21,8 @@ stages:
 
       - task: PowerShell@2
         displayName: 'Setup Chef WS'
+        variables: 
+          - group: Credentials
         inputs:
           targetType: 'filePath'
           filePath: $(System.DefaultWorkingDirectory)\pipeline\setup_chef.ps1
