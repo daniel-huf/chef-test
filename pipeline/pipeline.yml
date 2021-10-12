@@ -10,6 +10,11 @@ stages:
       pool:
         vmImage: windows-latest
 
+      variables: 
+        - group: Credentials
+        - name: cred
+
+      
       steps:
       - task: PowerShell@2
         displayName: 'Install Chef WS'
@@ -21,8 +26,6 @@ stages:
 
       - task: PowerShell@2
         displayName: 'Setup Chef WS'
-        variables: 
-          - group: Credentials
         inputs:
           targetType: 'filePath'
           filePath: $(System.DefaultWorkingDirectory)\pipeline\setup_chef.ps1
