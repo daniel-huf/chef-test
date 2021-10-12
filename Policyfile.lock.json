@@ -1,0 +1,52 @@
+{
+  "revision_id": "a6e5a51c7d8f9291dae66c983be96742896d5e94185dd495d69d7d792fdd6acc",
+  "name": "test_dsc",
+  "run_list": [
+    "recipe[test_dsc::default]",
+    "recipe[test_dsc::create_file]"
+  ],
+  "included_policy_locks": [
+
+  ],
+  "cookbook_locks": {
+    "test_dsc": {
+      "version": "0.1.0",
+      "identifier": "374fadc05465cf359110da6af6a31072da2e347f",
+      "dotted_decimal_identifier": "15568731393779151.15077675335612067.18085472777343",
+      "source": ".",
+      "cache_key": null,
+      "scm_info": {
+        "scm": "git",
+        "remote": null,
+        "revision": null,
+        "working_tree_clean": true,
+        "published": false,
+        "synchronized_remote_branches": [
+
+        ]
+      },
+      "source_options": {
+        "path": "."
+      }
+    }
+  },
+  "default_attributes": {
+
+  },
+  "override_attributes": {
+
+  },
+  "solution_dependencies": {
+    "Policyfile": [
+      [
+        "test_dsc",
+        ">= 0.0.0"
+      ]
+    ],
+    "dependencies": {
+      "test_dsc (0.1.0)": [
+
+      ]
+    }
+  }
+}
