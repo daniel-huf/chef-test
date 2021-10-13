@@ -51,7 +51,9 @@ stages:
         inputs:
           targetType: 'inline'
           workingDirectory: 'C:\Temp\chef-zero-repo'
-          script: 'C:\opscode\chef-workstation\bin\chef-client -z'
+          script: |
+            C:\opscode\chef-workstation\bin\chef-client -z -L C:\Temp\chef-zero-log.txt'
+            cat C:\Temp\chef-zero-log.txt
         env:
           CHEF_LICENSE: accept
 
